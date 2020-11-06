@@ -11,7 +11,6 @@ Don't modify the input
 For C: The result is freed.
 '''
 #my solution
-
 def order_weight(string):
     string_list = sorted(string.strip().split(' '))
 
