@@ -82,11 +82,22 @@ def parse_int(string):
 print(parse_int('eighty-eight hundred thousand eighty-eight hundred'))
 
 '''
-At first, I was completely stuck on this. I eventually figured out how to find the solutions to around half of the assertions on Codewars, but many of them were failing because of my initial method. The get_num_subset() function was the only method that was being used, and I would multiply the added numbers * either one hundred or one thousand respectively. This led to errors in cases such as "eighty-eight hundred thousand eighty-eight hundred". The algorithm would return 880008800 instead of 8808800 because it was multiplying the ENTIRE number by 100 with the eighty-eight hundred part. Eventually, I figured out that I had to break the initial list down into subsets using the keywords "million" and "thousand". I then made the get_num_subset function that allowed me to get the numbers each of the subsets. Finally, I added all of the numbers returned by the get_num_subset function to the rtn_number_2 integer and then returned rtn_number_2. This was a great exercise and allowed me to use a while loop. However, it took me a while (no pun intended) to figure out how to effectively implement a while loop. Therefore, I probably need some refreshers about how to correctly use while loops.
+At first, I was completely stuck on this. I eventually figured out how to find the solutions to around half of the assertions on Codewars, but many of them were 
+failing because of my initial method. The get_num_subset() function was the only method that was being used, and I would multiply the added numbers * either 
+one hundred or one thousand respectively. This led to errors in cases such as "eighty-eight hundred thousand eighty-eight hundred". The algorithm would return 
+880008800 instead of 8808800 because it was multiplying the ENTIRE number by 100 with the eighty-eight hundred part. Eventually, I figured out that I had to 
+break the initial list down into subsets using the keywords "million" and "thousand". I then made the get_num_subset function that allowed me to get the numbers 
+each of the subsets. Finally, I added all of the numbers returned by the get_num_subset function to the rtn_number_2 integer and then returned rtn_number_2. 
+This was a great exercise and allowed me to use a while loop. However, it took me a while (no pun intended) to figure out how to effectively implement a while 
+loop. Therefore, I probably need some refreshers about how to correctly use while loops.
 
 Another thing is that the algorithm is definitely is running a bit long.
 
-A few of the users on Codewars were able to find a solution that only used THREE for loops. Mine used two for loops and while loop. I still am confused about how to correctly calculate the O Notation, but I suspect that the time complexity of this algorithm is close to O(n2), where n in the length of the initial lst created by splitting the string. The get_num_subset function runs on O(n^2) time complexity, and then you have to add the while loop itself, which runs on O(n). Therefore, I believe that it is possibly accurate to say that the algorithm is running on O(n^2) time complexity. However, I am not completely sure. I will need to do some more research about how to accurately calculate Big O notation of algorithms.
+A few of the users on Codewars were able to find a solution that only used THREE for loops. Mine used two for loops and while loop. I still am confused about how 
+to correctly calculate the O Notation, but I suspect that the time complexity of this algorithm is close to O(n2), where n in the length of the initial lst 
+created by splitting the string. The get_num_subset function runs on O(n^2) time complexity, and then you have to add the while loop itself, which runs on O(n). 
+Therefore, I believe that it is possibly accurate to say that the algorithm is running on O(n^2) time complexity. However, I am not completely sure. I will need 
+to do some more research about how to accurately calculate Big O notation of algorithms.
 
 ONES = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
         'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen',
