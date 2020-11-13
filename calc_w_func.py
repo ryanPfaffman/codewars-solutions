@@ -197,4 +197,26 @@ So, I found an easier way to do it by returning a list of both the function
 and a string. In the operand functions, I checked to see what the string was.
 Simple. I am still taking a long time to figure out these simple solutions, but
 I feel my thought-processes improving, so that is good I guess.
+
+After submitting my solution, I found one that a few of the other Codewars
+users submitted, and I thought the brevity and consiseness of it looked outstanding.
+Also, I used two if statements in per operand function, while the solution below 
+only used one. Finally, the solution below actually completed computations in the 
+operator functions. So, pretty awesome.
+
+def zero(f = None): return 0 if not f else f(0)
+def one(f = None): return 1 if not f else f(1)
+def two(f = None): return 2 if not f else f(2)
+def three(f = None): return 3 if not f else f(3)
+def four(f = None): return 4 if not f else f(4)
+def five(f = None): return 5 if not f else f(5)
+def six(f = None): return 6 if not f else f(6)
+def seven(f = None): return 7 if not f else f(7)
+def eight(f = None): return 8 if not f else f(8)
+def nine(f = None): return 9 if not f else f(9)
+
+def plus(y): return lambda x: x+y
+def minus(y): return lambda x: x-y
+def times(y): return lambda  x: x*y
+def divided_by(y): return lambda  x: x/y
 '''
