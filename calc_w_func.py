@@ -157,10 +157,9 @@ def nine(function = None):
     return 9
 
 '''
-At first, I tried to solve this by adding a .has_been_called method to the plus
-operator functions, and if those functions had been called in the operand
-functions, change the .has_been_called to True. Outside of the function, it
-changed back to False.
+At first, I tried to solve this by adding a .has_been_called method to the operator 
+functions, and if those functions had been called in the operand functions, change 
+the .has_been_called to True. Outside of the function, it changed back to False.
 
 Example:
 def plus(function):
