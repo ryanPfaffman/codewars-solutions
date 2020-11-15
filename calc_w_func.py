@@ -186,7 +186,7 @@ def one(function = None):
 
 When I tried to pass the Kata using this method, I got the four sample tests to
 pass, but when I tried to run the code against the 164 other tests, I eventually
-failed every time. The number of failures ranged from 11 to 46!
+failed every time. The number of failures ranged from 11 to 46.
 I am not sure why this is. The code would call the operator called previously
 on the number functions. For example, if six(times(eight())) had been
 successfully called and then six(divided_by(eight())) was called afterwards,
