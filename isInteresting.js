@@ -34,7 +34,6 @@ const isInteresting = (number, awesomePhrases) => {
     let checkValue3 = 0;
 
     let checkValue = testArray.indexOf(array[0]);
-    console.log(checkValue);
 
     for (let x = 1; x <= array.length - 1; x++) {
       let tempCheck = testArray.indexOf(array[x]);
@@ -55,7 +54,6 @@ const isInteresting = (number, awesomePhrases) => {
     const testArray = [9,8,7,6,5,4,3,2,1,0]
 
     let checkValue = testArray.indexOf(array[0]);
-    console.log(checkValue)
 
     for (let x = 1; x <= array.length - 1; x++) {
       let tempCheck = testArray.indexOf(array[x]);
