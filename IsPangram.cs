@@ -36,3 +36,23 @@ public static class Kata
 
    }
 }
+
+/*
+using System;
+
+public static class Kata
+{
+  public static bool IsPangram(string str)
+  {
+      str = str.ToLower();
+
+      for (char letter = 'a'; letter <= 'z'; letter++)
+      {
+        if (str.IndexOf(letter) == -1) return false;
+      }
+      return true; 
+  }
+}
+
+^^^ 👍
+*/
