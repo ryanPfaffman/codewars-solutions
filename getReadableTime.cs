@@ -37,3 +37,14 @@ public static class TimeFormat
       return $"{gen.getText(hrs)}:{gen.getText(min)}:{gen.getText(sec)}";
     }
 }
+
+/*
+public static class TimeFormat
+{
+    public static string GetReadableTime(int seconds)
+    {
+        return string.Format("{0:d2}:{1:d2}:{2:d2}", seconds / 3600, seconds / 60 % 60, seconds % 60);
+    }
+}
+^^ shows my overthinking 🤦‍♂️
+*/
