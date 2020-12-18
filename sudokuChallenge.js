@@ -68,8 +68,6 @@ const doneOrNot = (board) => {
   
   let indexToPush = 0;
   
-  let c = 0;
-  
   let countInners = 0;
   
   for (let row in board) {
@@ -148,7 +146,6 @@ const doneOrNot = (board) => {
         tempL_8.push(board[row][x]);
       }
     }
-    c++;
     tempL = [];
     countInners++;
     if (countInners == 3) {
