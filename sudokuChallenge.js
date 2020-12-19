@@ -66,8 +66,6 @@ const doneOrNot = (board) => {
   let beg3 = 6;
   let end3 = 8;
   
-  let indexToPush = 0;
-  
   let countInners = 0;
   
   for (let row in board) {
